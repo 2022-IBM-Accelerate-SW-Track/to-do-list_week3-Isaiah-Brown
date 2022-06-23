@@ -16,7 +16,7 @@ const Todos = ({ todos, deleteTodo }) => {
       const dueDate = new Date(todo.due);
       const currentDate = new Date();
 
-      if ((currentDate.getTime() - 86400000 >= dueDate.getTime())){
+      if (currentDate > dueDate){
         color = "#880808";
       }
 
