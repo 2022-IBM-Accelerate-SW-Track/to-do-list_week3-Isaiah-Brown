@@ -30,9 +30,9 @@ class AddTodo extends Component {
     event.preventDefault();
     if (this.state.content.trim()) {
       this.props.addTodo(this.state);
-      console.log(this.state.due);
-      const test = new Date(this.state.due);
-      console.log(test.getTime());
+      //onsole.log(this.state.due);
+      //const test = new Date(this.state.due);
+      //console.log(test.getTime());
       this.setState({
         content: "",
         date: "",
